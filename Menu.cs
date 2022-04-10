@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour{
     }
 
     public void SetEnding(string str,AudioClip clip){
-        SoundManager.instance.PlaySound(clip);
+        //SoundManager.instance.PlaySound(clip);
         interactiveText.text = str;
     }
 }

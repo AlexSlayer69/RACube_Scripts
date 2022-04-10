@@ -9,7 +9,8 @@ public class Shopkeeper : Interactable{
     [SerializeField] private string str2;
     [SerializeField] private Storage storage;
     [SerializeField] private GameObject guard;
-    public AudioClip[] clip;
+    public AudioClip clip0;
+    public AudioClip clip1;
     
     
     public override string GetDescription(){
@@ -26,8 +27,8 @@ public class Shopkeeper : Interactable{
 
         guard.SetActive(true);
 
-        if (storage.coins > 100) dialogue_box.SetDialogue(str2,clip[0]);
-        else dialogue_box.SetDialogue(str1,clip[1]);
+        if (storage.coins > 100) dialogue_box.SetDialogue(str2,clip0);
+        else dialogue_box.SetDialogue(str1,clip1);
        
     }
 }
